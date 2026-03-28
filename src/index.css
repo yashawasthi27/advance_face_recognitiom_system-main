@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply bg-[#080B14] text-slate-200 antialiased selection:bg-violet-500/30;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    /* Subtle dot grid for a modern dark look */
+    background-image: radial-gradient(rgba(139,92,246,0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-attachment: fixed;
+  }
+}
+
+.glass-card {
+  @apply bg-white/[0.04] backdrop-blur-2xl border border-white/[0.08] rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] transition-all duration-300;
+}
+
+.glass-card:hover {
+  @apply bg-white/[0.07] border-violet-500/30 shadow-[0_8px_48px_rgba(139,92,246,0.2)];
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-400;
+  animation: gradient-x 4s ease infinite;
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+/* React Timekeeper Premium Dark Theme Overrides */
+.react-timekeeper {
+  background-color: #0d1117 !important;
+  border: 1px solid rgba(139,92,246,0.2) !important;
+  color: #f1f5f9 !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6) !important;
+}
+
+.react-timekeeper__top-bar, .react-timekeeper__tb-minute-wrapper, .react-timekeeper__tb-hour-wrapper {
+  background-color: #080B14 !important;
+}
+
+.react-timekeeper__top-bar {
+  border-top-left-radius: 1.5rem !important;
+  border-top-right-radius: 1.5rem !important;
+}
+
+.react-timekeeper__clock-wrapper {
+  background-color: #0d1117 !important;
+}
+
+.react-timekeeper__clock {
+  background-color: #161b27 !important;
+}
+
+.react-timekeeper__tb-hour,
+.react-timekeeper__tb-minute,
+.react-timekeeper__tb-colon {
+  color: #cbd5e1 !important;
+}
+
+.react-timekeeper__tb-hour--active,
+.react-timekeeper__tb-minute--active {
+  color: #a78bfa !important; /* violet-400 */
+}
+
+.react-timekeeper__clock-hand {
+  stroke: #8b5cf6 !important; /* violet-500 */
+}
+
+.react-timekeeper__hand-circle-outer,
+.react-timekeeper__hand-circle-center,
+.react-timekeeper__hand-intermediate-circle {
+  fill: #8b5cf6 !important;
+}
+
+.react-timekeeper__clock-hours span,
+.react-timekeeper__clock-minutes span {
+  color: #94a3b8 !important;
+}
+
+.react-timekeeper__done-button {
+  color: #a78bfa !important;
+  background-color: #0d1117 !important;
+  border-top: 1px solid rgba(139,92,246,0.2) !important;
+  border-bottom-left-radius: 1.5rem !important;
+  border-bottom-right-radius: 1.5rem !important;
+}
+
+.react-timekeeper__meridiem-toggle {
+  color: #94a3b8 !important;
+  background-color: #080B14 !important;
+}
+
+.react-timekeeper__meridiem--active {
+  color: #a78bfa !important;
+  background-color: #4c1d95 !important; /* violet-900 */
+}
+
+.react-timekeeper__time-dropdown {
+  background-color: #080B14 !important;
+  border-left: 1px solid rgba(139,92,246,0.2) !important;
+}
+
+.react-timekeeper__dropdown-numbers {
+  background-color: #0d1117 !important;
+}
+
+.react-timekeeper__dropdown-number {
+  color: #94a3b8 !important;
+}
+
+.react-timekeeper__dropdown-number:hover {
+  background-color: #161b27 !important;
+}
+
+.react-timekeeper__dropdown-number--active {
+  color: #a78bfa !important;
+  background-color: #161b27 !important;
+}
