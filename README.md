@@ -93,3 +93,10 @@ If you'd like to extend or run this project on your machine:
 4. Open the `localhost` link generated in your terminal to view the application!
 
 *(Note: Make sure to allow camera permissions when the browser prompts you to use the core face recognition functionality.)*
+
+---
+
+## 👨‍💻 Creator
+
+- **LinkedIn**: [Yash Awasthi](https://www.linkedin.com/in/yashawasthi27/)
+- **Portfolio**: [yashportfolio27.netlify.app](https://yashportfolio27.netlify.app/)
