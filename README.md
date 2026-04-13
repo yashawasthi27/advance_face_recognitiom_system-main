@@ -109,4 +109,4 @@ _(Note: Make sure to allow camera permissions when the browser prompts you to us
 ## 👨‍💻 Creator
 
 - **LinkedIn**: [Yash Awasthi](https://www.linkedin.com/in/yashawasthi27/)
-- **Portfolio**: [yashportfolio27.netlify.app](https://yashportfolio27.netlify.app/)
+- **Portfolio**: [yashawasthi27.github.io/Portfolio/](https://yashawasthi27.github.io/Portfolio/)
